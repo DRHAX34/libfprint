@@ -1,3 +1,32 @@
+How to build libfprint:
+
+Requirements:
+
+
+```bash
+pixman-dev
+make
+ph-autoreconf
+```
+
+Put this into the terminal to build:
+
+
+```bash
+autoreconf -i
+
+./configure --prefix=/usr --sysconfdir=/etc --disable-static --disable-examples-build --disable-x11-examples-build --enable-udev-rules --disable-debug-log
+
+make
+```
+
+
+To install:
+
+```bash
+sudo make install
+```
+
 libfprint
 =========
 
